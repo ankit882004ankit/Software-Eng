@@ -1,0 +1,27 @@
+
+@startuml
+start
+
+:User Login;
+:Create Account;
+:Profile Setup;
+:Select Course;
+
+partition Selection {
+  :Choose College;
+  :View Recommendations;
+  :Compare Colleges;
+}
+
+if ("College Selected?") then (Yes)
+  :Evaluate Criteria;
+  :Make Decision;
+  :Confirm Selection;
+  :Finalize Application;
+  stop
+else (No)
+  :Go Back to Selection;
+  -> Selection;
+endif
+
+@enduml

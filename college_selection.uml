@@ -1,0 +1,22 @@
+
+@startuml
+start
+
+:User Login;
+:Create Account;
+:Profile Setup;
+:Select Course;
+
+partition Selection {
+  :Choose College;
+  :View Recommendations;
+  :Compare Colleges;
+}
+
+:Evaluate Criteria;
+:Make Decision;
+:Confirm Selection;
+:Finalize Application;
+
+stop
+@enduml
